@@ -1,16 +1,13 @@
----
-surface: long
----
 
 # Awesome Link Check
 
-Flag stale or archived GitHub repos in an awesome list. One bash script, no API key. <<src:checker-spec>>
+Flag stale or archived GitHub repos in an awesome list. One bash script, no API key.
 
-Adapted from [lodar/awesome-self-hosted-agents/check.sh](https://github.com/lodar/awesome-self-hosted-agents/blob/main/check.sh), published under CC0-1.0. <<src:checker-upstream>>
-This version reads GitHub repository links anywhere in a README and checks each repository once. <<src:checker-local>>
-It prints the latest commit date from `commits.atom`, the age and archived status. The age limit defaults to 90 days. <<src:checker-local>>
-A flag or a failed check returns exit 1. Invalid input returns exit 2. <<src:checker-fixtures>>
-Requires Bash, curl, grep, sed, GNU date, sort, head and cat. <<src:checker-local>>
+Adapted from [lodar/awesome-self-hosted-agents/check.sh](https://github.com/lodar/awesome-self-hosted-agents/blob/main/check.sh), published under CC0-1.0.
+This version reads GitHub repository links anywhere in a README and checks each repository once.
+It prints the latest commit date from `commits.atom`, the age and archived status. The age limit defaults to 90 days.
+A flag or a failed check returns exit 1. Invalid input returns exit 2.
+Requires Bash, curl, grep, sed, GNU date, sort, head and cat.
 
 Run it on a local README:
 
@@ -18,7 +15,7 @@ Run it on a local README:
 bash check.sh /path/to/README.md 90
 ```
 
-Real output on 2026-10-03, run on the README of [lodar/awesome-self-hosted-agents](https://github.com/lodar/awesome-self-hosted-agents): <<src:checker-live>>
+Real output on 2026-10-03, run on the README of [lodar/awesome-self-hosted-agents](https://github.com/lodar/awesome-self-hosted-agents):
 
 ```text
 repository	last_commit	age	archived	status
